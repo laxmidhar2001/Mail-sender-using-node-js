@@ -14,10 +14,10 @@ const sendMail = async (req, res) => {
 };
 async function main() {
     let info = await transporter.sendMail({
-        from: '"Laxidhar das 👻" <rawtoxicop@gmail.com>', // sender address
-        to: "kingqueenstatusyt@gmail.com", // list of receivers
-        subject: "Hello sweetheart✔", // Subject line
-        text: "Hello world? I hope you are doing well!", // plain text body
+        from: '"~Sender Name~ 👻" <~Sender Mail~>', // sender address
+        to: "~Receiver Mail~", // list of receivers
+        subject: "Hello ~Receiver~", // Subject line
+        text: "Hello ther, I hope you are doing well!", // plain text body
         html: "<b>Hello Boss </b>", // html bo
     })
     console.log("Message sent: %s", info.messageId);
